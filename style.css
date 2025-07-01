@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.imgur.com/Nw3yHnE.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Crimson Text', serif;
+  color: #2f1e12;
+  overflow-y: auto;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 248, 233, 0.95);
+  padding: 40px;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+p,
+.intermission-text {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-bottom: 1em;
+}
+
+.playlist,
+h5 {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.playlist a {
+  text-decoration: none;
+  background: #3f2a20;
+  color: #fffbe0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background 0.3s ease;
+}
+
+.playlist a:hover {
+  background: #5c3a2a;
+}
+
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.nav-button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  background-color: #5c3a2a;
+  color: #fffbe0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #7a4d38;
+}
+
+#pdfImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  width: 100wh;
+  max-width: 780px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.slides {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.floating-emoji {
+  position: absolute;
+  font-size: 40px;
+  animation: floatUp linear;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.slides img {
+  width: 150px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#fallingImagesContainer {
+  position: fixed;
+  top: -50%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.falling-img {
+  position: absolute;
+  width: 200px;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}

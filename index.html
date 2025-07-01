@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Um Pouco de Você</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="particles"></canvas>
+  <div id="fallingImagesContainer"></div>
+
+  <div class="container">
+    <div id="pages">
+      <img id="pdfImage" src="pages/page_1.png" alt="Página 1" />
+      <button id="nextPage" class="nav-button">Próximo →</button>
+    </div>
+
+    <div id="intermission" style="display: none;">
+      <p class="intermission-text">Calma que ainda não acabou ❤️ </p>
+      <div class="carousel">
+        <div class="slides">
+          <img src="fotos/foto3.jpg" alt="Foto 1" />
+          <img src="fotos/foto2.jpg" alt="Foto 2" />
+          <img src="fotos/foto9.jpg" alt="Foto 3" />
+          <img src="fotos/foto4.jpg" alt="Foto 4" />
+          <img src="fotos/foto5.jpg" alt="Foto 5" />
+          <img src="fotos/foto10.jpg" alt="Foto 6" />
+          <img src="fotos/foto7.jpg" alt="Foto 7" />
+          <img src="fotos/foto8.jpg" alt="Foto 8" />
+          <img src="fotos/foto6.jpg" alt="Foto 9" />
+          <img src="fotos/foto1.jpg" alt="Foto 10" />
+          <img src="fotos/foto11.jpg" alt="Foto 11" />
+          <img src="fotos/foto12.jpg" alt="Foto 12" />
+          <img src="fotos/foto13.jpg" alt="Foto 13" />
+        </div>
+      </div>
+      <button id="goToLetter" class="nav-button">Receba</button>
+    </div>
+
+    <div id="letterSection" style="display: none;">
+      <div id="letter"></div>
+      <p style="text-align: right; margin-top: 2em;">Com carinho,<br />Cleyson</p>
+      <div class="playlist">
+        <a href="https://open.spotify.com/playlist/1TeFKiEYPuwkvNpEDzfAFL?si=a724f9d228d5472b" target="_blank">Um Pouco
+          de Você. Part2</a>
+      </div>
+      <h5>Clique Aqui 👆</h5>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
